@@ -6,6 +6,10 @@
         <title>Movies </title>
         <link rel="Stylesheet" href="C:\Users\BIDA21-003\Downloads\style.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Smooch&display=swap" rel="stylesheet">
+       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <!--using fontAwesome-------------->
@@ -18,7 +22,7 @@
       <nav>
            <!--logo------------>
           <a href="Index.html" class="logo">
-             Movies<span>.HD</span>
+             Movies<span>.hd</span>
            </a>
           <!--menu--btn--------------->
           <input type="checkbox" class="menu-btn" id="menu-btn"/>
@@ -29,16 +33,30 @@
           <ul class="menu">
              <li><a href="Index.html">home</a></li>
               <li><a href="movies.html">movies</a></li>
-              <li><a href="#">categories</a></li>
-               <li><a href="#">contact</a></li>
-               <li><a href="#">feedback</a></li>
-               <li><a href="Login form.html">login</a></li>
+              <li>
+                <div class="dropdown">
+                  <button  class="dropbtn">category</button>
+                  <div class="dropdown-content">
+                    <a href="action movie.html">Action</a>
+                    <a href="comedy.html">Comedy</a>
+                    <a href="romance.html">Romance</a>
+                    <a href="Horror.html">Horror</a>
+                    <a href="animation.html">Animation</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="upcoming.html">upcoming</a></li>
+              <li><a href="feedback.html">feedback</a></li>
+              <li><a href="Login form.html">login</a></li>
+              
            </ul>
            <!--search-------------->
            <div class="search">
-              <input type="text"  placeholder="Find your favourtie movie" class="search-input" requited/>
-              <!--search-icon-------------->
-                  <i class="fa fa-search"></i>
+            <form class="example" action="https://www.google.com/search" method="get">
+                <input type="text" placeholder="search"  name="q">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
            </div>
        </nav>
        <!--nav-end-->
@@ -49,43 +67,32 @@
 
         <div class="main-video-container">
             <div class="video">
-                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" loop controls class="main-video" ></video> 
-                <h3 class="main-vid-title">01. Hallow Point</h3>
+                <video src="website pics\video\VID-20220628-WA0048.mp4"; loop controls class="main-video" ></video> 
+                <h3 class="main-vid-title">00. the king reigns</h3>
             </div>
        </div> 
         <div class="video-list-container">
             <div class="list">
-                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video" ></video> 
+                <video src="website pics\video\VID-20220628-WA0031.mp4" class="list-video" ></video> 
                 <h3 class="list-title">01. Hallow Point</h3>
             </div>
             <div class="list">
-                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video" ></video> 
-                <h3 class="list-title">02. Hallow Point</h3>
+                <video src="website pics\video\VID-20220628-WA0032.mp4" class="list-video" ></video> 
+                <h3 class="list-title">02. A new legacy, looney tunes</h3>
             </div>
             <div class="list">
-                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video" ></video> 
-                <h3 class="list-title">03. Hallow Point</h3>
+                <video src="website pics\video\VID-20220628-WA0035.mp4" class="list-video" ></video> 
+                <h3 class="list-title">03. The Invitation</h3>
             </div>
             <div class="list">
-                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video"></video> 
-                <h3 class="list-title">04. Hallow Point</h3>
+                <video src="website pics\video\VID-20220628-WA0034.mp4" class="list-video"></video> 
+                <h3 class="list-title">04. deadpool</h3>
             </div>
             <div class="list">
-                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video" ></video> 
-                <h3 class="list-title">05. Hallow Point</h3>
+                <video src="website pics\video\VID-20220628-WA0038.mp4" class="list-video"></video> 
+                <h3 class="list-title">05. in 2020</h3>
             </div>
-            <div class="list">
-                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video" ></video> 
-                <h3 class="title">06. Hallow Point</h3>
-            </div>
-            <div class="list">
-                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video"></video> 
-                <h3 class="title">07. Hallow Point</h3>
-            </div>
-            <div class="list">
-                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video"></video> 
-                <h3 class="list-title">08. Hallow Point</h3>
-            </div>
+            
         </div>
       </div>
      <script>
