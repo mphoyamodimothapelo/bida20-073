@@ -387,6 +387,9 @@ nav .menu-btn{
         padding:0px 10px;
 
     }
+    .logo span{
+    margin-left:18%;
+    }
     nav .menu{
         display: none;
         position: absolute;
@@ -490,9 +493,7 @@ nav .menu-btn{
     .logo{
         margin: 0px;
     }
-    .logo span{
-	 margin-left:20%;
-    }
+    
     #main-slider{
         margin: 30px;
     }
